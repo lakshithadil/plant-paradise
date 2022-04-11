@@ -3,12 +3,12 @@
 
     if(!isset($_SESSION['cart_items']) || empty($_SESSION['cart_items']))
     {
-        header('location:index.php');
+        header('location:home.php');
         exit();
     }
 
     require_once('./inc/config.php');    
-    
+    require_once('./inc/helpers.php'); 
     $cartItemCount = count($_SESSION['cart_items']);
 
     //pre($_SESSION);
