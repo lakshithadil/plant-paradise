@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 11, 2022 at 10:19 AM
+-- Generation Time: Apr 11, 2022 at 05:11 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -48,12 +48,10 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `first_name`, `last_name`, `email`, `address`, `address2`, `country`, `state`, `zipcode`, `total_price`, `order_status`, `created_at`, `updated_at`) VALUES
-(1, 'Ahsan', 'Zameer', 'ahsnzmeerkhan@gmail.com', 'L-14 Gulshan-e-Malir, Malir Halt Karachi', 'L-14 Gulshan-e-Malir, Malir Halt Karachi', 'United States', 'California', '75210', 120.00, 'confirmed', '2021-02-15 11:16:10', '2021-02-15 11:16:10'),
-(2, 'Ahsan', 'Zameer', 'ahsnzmeerkhan@gmail.com', 'L-14 Gulshan-e-Malir, Malir Halt Karachi', 'L-14 Gulshan-e-Malir, Malir Halt Karachi', 'United States', 'California', '75210', 0.00, 'confirmed', '2021-02-15 11:18:47', '2021-02-15 11:18:47'),
-(3, 'Ahsan', 'Zameer', 'ahsnzmeerkhan@gmail.com', 'L-14 Gulshan-e-Malir, Malir Halt Karachi', 'L-14 Gulshan-e-Malir, Malir Halt Karachi', 'United States', 'California', '75210', 114.00, 'confirmed', '2021-02-15 11:21:50', '2021-02-15 11:21:50'),
-(4, 'zstgzgt', 'tatata', 'asdf@gmail.com', 'rarea', 'rarea', 'United States', 'California', '6537', 9.50, 'confirmed', '2022-04-10 16:10:12', '2022-04-10 16:10:12'),
-(5, 'lk', 'lkjiib', 'biub@gma.com', 'tfucct', 'tfucct', 'United States', 'California', '0000', 999.00, 'confirmed', '2022-04-10 17:29:10', '2022-04-10 17:29:10'),
-(6, 'lakshitha', 'dilshan', 'laki@gma.com', '5eg jhckj', '5eg jhckj', 'Sri Lanka', 'Kurunegala', '55566', 1700.00, 'confirmed', '2022-04-10 18:41:54', '2022-04-10 18:41:54');
+(6, 'lakshitha', 'dilshan', 'laki@gma.com', '5eg jhckj', '5eg jhckj', 'Sri Lanka', 'Kurunegala', '55566', 1700.00, 'confirmed', '2022-04-10 18:41:54', '2022-04-10 18:41:54'),
+(7, 'lakshitha', 'dilshan', 'am@abc.com', 'dalugama,kelaniya', 'dalugama,kelaniya', 'Sri Lanka', 'Colombo', '6896', 2550.00, 'confirmed', '2022-04-11 16:55:03', '2022-04-11 16:55:03'),
+(8, 'abc', 'cdf', 'abc@bbc.com', 'No:567/C,Ritz Tower,Colombo 08,Sri Lanka.', 'No:567/C,Ritz Tower,Colombo 08,Sri Lanka.', 'Sri Lanka', 'Colombo', '5365', 599.00, 'confirmed', '2022-04-11 16:59:44', '2022-04-11 16:59:44'),
+(9, 'nimal', 'jayasiri', 'nimal@abc.com', 'No:437/C,Ritz Tower,Colombo 07,Sri Lanka.', 'No:437/C,Ritz Tower,Colombo 07,Sri Lanka.', 'Sri Lanka', 'Colombo', '7466', 800.00, 'confirmed', '2022-04-11 17:08:51', '2022-04-11 17:08:51');
 
 -- --------------------------------------------------------
 
@@ -76,12 +74,11 @@ CREATE TABLE `order_details` (
 --
 
 INSERT INTO `order_details` (`id`, `order_id`, `product_id`, `product_name`, `product_price`, `qty`, `total_price`) VALUES
-(1, 3, 1, 'Black T-shirt', 10.00, 1, 9.50),
-(2, 3, 3, 'Maroon T-shirt', 10.00, 5, 47.50),
-(3, 3, 4, 'Orange T-shirt', 10.00, 6, 57.00),
-(4, 4, 3, 'Maroon T-shirt', 9.50, 1, 9.50),
-(5, 5, 4, 'ZZ Plant', 999.00, 1, 999.00),
-(6, 6, 2, 'Jade Succulent', 850.00, 2, 1700.00);
+(6, 6, 2, 'Jade Succulent', 850.00, 2, 1700.00),
+(7, 7, 7, 'Croton Petra', 950.00, 1, 950.00),
+(8, 7, 6, 'Aurora k', 800.00, 2, 1600.00),
+(9, 8, 12, 'Sago Palm', 599.00, 1, 599.00),
+(10, 9, 6, 'Aurora k', 800.00, 1, 800.00);
 
 -- --------------------------------------------------------
 
@@ -188,13 +185,13 @@ ALTER TABLE `product_images`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `products`

@@ -1,7 +1,7 @@
 <?php 
     session_start();
     require_once('./inc/config.php');    
-     
+    require_once('./inc/helpers.php'); 
     
     if(isset($_GET['product']) && !empty($_GET['product']) && is_numeric($_GET['product']))
     {

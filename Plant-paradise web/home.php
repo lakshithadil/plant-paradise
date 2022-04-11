@@ -1,7 +1,7 @@
 <?php 
     session_start();
     require_once('./inc/config.php');    
-
+    require_once('./inc/helpers.php');
     $sql = "SELECT p.*,pdi.img from products p
                     INNER JOIN product_images pdi ON pdi.product_id = p.id
                     WHERE p.is_featured = 1";
