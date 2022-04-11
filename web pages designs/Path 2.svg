@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920.5" height="603" viewBox="0 0 1920.5 603">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.75;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-3 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: #707070;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#545454"/>
+    </linearGradient>
+  </defs>
+  <g id="Path_2" data-name="Path 2" class="cls-1">
+    <path class="cls-2" d="M 1920 602.5 L 0.49993896484375 602.5 L 0.49993896484375 0.5 L 1920 0.5 L 1920 602.5 Z"/>
+    <path class="cls-3" d="M 0.9998779296875 1 L 0.9998779296875 602 L 1919.5 602 L 1919.5 1 L 0.9998779296875 1 M -0.0001220703125 0 L 1920.5 0 L 1920.5 603 L -0.0001220703125 603 L -0.0001220703125 0 Z"/>
+  </g>
+</svg>
