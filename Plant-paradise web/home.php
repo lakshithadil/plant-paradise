@@ -4,7 +4,7 @@
 
     $sql = "SELECT p.*,pdi.img from products p
                     INNER JOIN product_images pdi ON pdi.product_id = p.id
-                    WHERE pdi.is_featured = 1";
+                    WHERE p.is_featured = 1";
     $handle = $db->prepare($sql);
     $handle->execute();
     $getAllProducts = $handle->fetchAll(PDO::FETCH_ASSOC);
@@ -220,8 +220,7 @@
 <br>
 <div class="container-fluid mt-3 text-center">
   <div class="row">
-    <div class="col-sm-12"><button type="button" class="btn btn-outline-success" id="btns">Top Rating</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button type="button" class="btn btn-outline-success" id="btns">Best Selling</button></div>
+    <div class="col-sm-12"><div class="display-6">Featured Products</div></div>
     </div>
   <div class="row"></div>
   <div class="row"></div>

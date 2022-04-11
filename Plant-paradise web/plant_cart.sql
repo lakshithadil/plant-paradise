@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `country` varchar(255) NOT NULL,
   `state` varchar(255) NOT NULL,
   `zipcode` varchar(255) DEFAULT NULL,
-  `total_price` float(10,2) NOT NULL DEFAULT '0.00',
+  `total_price` float(6,2) NOT NULL DEFAULT '0.00',
   `order_status` varchar(255) NOT NULL,
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `order_details` (
   `order_id` int(11) DEFAULT NULL,
   `product_id` int(11) DEFAULT NULL,
   `product_name` varchar(50) DEFAULT NULL,
-  `product_price` float(8,2) DEFAULT NULL,
+  `product_price` float(6,2) DEFAULT NULL,
   `qty` int(11) DEFAULT NULL,
   `total_price` double(6,2) DEFAULT NULL,
   PRIMARY KEY (`id`)
